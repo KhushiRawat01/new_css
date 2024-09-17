@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            background-color: beige;
+            border: 2px solid black;
+            height: 500px;
+            display: flex;   /*this default makes flex orientation as row.*/
+            /* flex-direction: row; */
+            /* flex-wrap: wrap; this retains the size of the div until the screen size collapses */
+            flex-flow: row /*wrap*/;  /*this is shorthand for flex-direction and flex-wrap*/
+            justify-content: start; /*space between,space around*/ 
+            /* align-content: center; moves the particlar element to teh start, end or center*/
+            
+        }
+        .box{
+            height: 150px;
+            width: 150px;
+            margin: 2px;
+            border: 2px solid white;
+        }
+        #box1{
+            background-color: yellowgreen;
+            /* align-self: center; */
+        }
+        #box2{
+            background-color: red;
+            /*order: -1; the order -1 refers to the element moving to the start and any other number refers o the element being at the last*/
+            
+        }
+        #box3{
+            background-color: palevioletred;
+        }
+        #box4{
+            background-color: midnightblue;
+            /* flex-shrink: 5; box4 will shrink 5times the speed of other boxes */
+            /* flex-grow: 5; box 4 will grow 5 times the speed of the other boxes and take up all the  empty space when fully stretched out*/
+            /* flex-basis: 300px; used to set the dimensions of the elements*/
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box" id="box1"></div>
+        <div class="box" id="box2"></div>
+        <div class="box" id="box3"></div>
+        <div class="box" id="box4"></div>
+    </div>
+</body>
+</html>

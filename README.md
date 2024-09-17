@@ -1,1 +1,1 @@
-# new_css
+# this is my first repo dedicated to the CSS i will doing on github
