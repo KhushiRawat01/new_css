@@ -20,35 +20,43 @@
         .box{
             height: 150px;
             width: 150px;
-            margin: 2px;
-            border: 2px solid white;
+            margin: 15px;
+            border: 2px solid purple;
+            /* box-shadow: 3px 3px maroon; */
+            box-shadow: -3px -3px maroon;
         }
         #box1{
             background-color: yellowgreen;
             /* align-self: center; */
+            text-align: center;
         }
         #box2{
             background-color: red;
             /*order: -1; the order -1 refers to the element moving to the start and any other number refers o the element being at the last*/
-            
+            text-align: center;
+            font-size:larger;
+            font-family: Arial, Helvetica, sans-serif;
+            text-shadow: 1px 1px blue;
         }
         #box3{
             background-color: palevioletred;
+            text-align: center;
         }
         #box4{
             background-color: midnightblue;
             /* flex-shrink: 5; box4 will shrink 5times the speed of other boxes */
             /* flex-grow: 5; box 4 will grow 5 times the speed of the other boxes and take up all the  empty space when fully stretched out*/
             /* flex-basis: 300px; used to set the dimensions of the elements*/
+            text-align: center;
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <div class="box" id="box1"></div>
-        <div class="box" id="box2"></div>
-        <div class="box" id="box3"></div>
-        <div class="box" id="box4"></div>
+        <div class="box" id="box1"> box1</div>
+        <div class="box" id="box2">box2</div>
+        <div class="box" id="box3">box3</div>
+        <div class="box" id="box4">box4</div>
     </div>
 </body>
 </html>
